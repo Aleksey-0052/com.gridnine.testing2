@@ -9,20 +9,21 @@ import java.util.Objects;
  */
 public class Segment {
 
-    private final LocalDateTime departureDate;
+    private LocalDateTime departureDate;
 
-    private final LocalDateTime arrivalDate;
+    private LocalDateTime arrivalDate;
 
-    Segment(final LocalDateTime dep, final LocalDateTime arr) {
+
+    public Segment(LocalDateTime dep, LocalDateTime arr) {
         departureDate = Objects.requireNonNull(dep);
         arrivalDate = Objects.requireNonNull(arr);
     }
 
-    LocalDateTime getDepartureDate() {
+    public LocalDateTime getDepartureDate() {
         return departureDate;
     }
 
-    LocalDateTime getArrivalDate() {
+    public LocalDateTime getArrivalDate() {
         return arrivalDate;
     }
 
